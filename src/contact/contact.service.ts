@@ -1,7 +1,6 @@
 import { HttpException, Inject, Injectable } from '@nestjs/common';
 import { Contact, User } from '@prisma/client';
 import { WINSTON_MODULE_PROVIDER } from 'nest-winston';
-import { WebResponse } from 'src/model/web.model';
 import { Logger } from 'winston';
 import { PrismaService } from '../common/prisma.service';
 import { ValidationService } from '../common/validation.service';
@@ -11,6 +10,7 @@ import {
   SearchContactRequest,
   UpdateContactRequest,
 } from '../model/contact.model';
+import { WebResponse } from '../model/web.model';
 import { ContactValidation } from './contact.validation';
 
 @Injectable()

@@ -7,7 +7,7 @@ import { AppModule } from '../src/app.module';
 import { TestModule } from './test.module';
 import { TestService } from './test.service';
 
-describe('ContactController', () => {
+describe('UserController', () => {
   let app: INestApplication;
   let logger: Logger;
   let testService: TestService;
